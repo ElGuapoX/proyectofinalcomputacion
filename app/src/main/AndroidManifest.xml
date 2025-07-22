@@ -13,6 +13,9 @@
         android:exported="true">
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
+            <activity android:name=".MenuActivity" />
+            <activity android:name=".SensorMovimientoActivity" />
+            <activity android:name=".PareoActivity" />
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
     </activity>
