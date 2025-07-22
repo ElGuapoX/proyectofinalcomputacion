@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
                 // Si deseas que el usuario no pueda volver atrás a MainActivity, puedes finalizarla:
                 finish();
             }
-
+                // verificar
             @Override
             public void onAuthenticationFailed() {
                 super.onAuthenticationFailed();
