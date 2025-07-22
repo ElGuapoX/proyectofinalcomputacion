@@ -20,6 +20,7 @@ public class MenuActivity extends AppCompatActivity {
 
         // Acción al presionar el botón "Prueba"
         btnPrueba.setOnClickListener(v -> {
+            Intent intent = new Intent(MenuActivity.this, PareoActivity.class); // Clase destino corregida
             startActivity(intent);
         });
 
