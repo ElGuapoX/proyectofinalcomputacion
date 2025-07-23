@@ -1,11 +1,13 @@
 package com.example.sensores;
 
 import android.graphics.Color;
+
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.content.Intent;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -51,12 +53,17 @@ public class MainActivity extends AppCompatActivity {
             public void onAuthenticationSucceeded(@NonNull BiometricPrompt.AuthenticationResult result) {
                 super.onAuthenticationSucceeded(result);
                 textViewStatus.setText("Estado: ¡Autenticación exitosa!");
-                Toast.makeText(getApplicationContext(),
-                                "¡Autenticación exitosa!", Toast.LENGTH_SHORT)
-                        .show();
+                Toast.makeText(getApplicationContext(), "¡Autenticación exitosa!", Toast.LENGTH_SHORT).show();
 
                 // Cambia el color de fondo a morado
                 mainLayout.setBackgroundColor(ContextCompat.getColor(MainActivity.this, R.color.my_custom_purple));
+
+                // Inicia MenuActivity tras cambiar el color de fondo
+                Intent intent = new Intent(MainActivity.this, MenuActivity.class);
+                startActivity(intent);
+
+                // Si deseas que el usuario no pueda volver atrás a MainActivity, puedes finalizarla:
+                finish();
             }
 
             @Override

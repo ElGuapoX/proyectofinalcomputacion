@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Título principal -->
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Evaluación Final"
+            android:textColor="@color/primary_color"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif-condensed"/>
+
+        <!-- Subtítulo -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Responde las siguientes preguntas"
+            android:textColor="@color/secondary_text"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Pregunta 1 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. ¿Cuál es un invertebrado?"
+            android:textColor="@color/primary_text"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:paddingVertical="8dp">
+
+            <RadioButton
+                android:id="@+id/rb1a"
+                style="@style/RadioButtonStyle"
+                android:text="Perro"/>
+
+            <RadioButton
+                android:id="@+id/rb1b"
+                style="@style/RadioButtonStyle"
+                android:text="Caracol"/>
+
+            <RadioButton
+                android:id="@+id/rb1c"
+                style="@style/RadioButtonStyle"
+                android:text="Gato"/>
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/checkPregunta1"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="end"
+            android:layout_marginBottom="16dp"
+            android:visibility="invisible"
+            android:contentDescription="Resultado pregunta 1"/>
+
+        <!-- Separador -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider_color"
+            android:layout_marginVertical="8dp"/>
+
+        <!-- Pregunta 2 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2. ¿Cuál es un vertebrado?"
+            android:textColor="@color/primary_text"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:paddingVertical="8dp">
+
+            <RadioButton
+                android:id="@+id/rb2a"
+                style="@style/RadioButtonStyle"
+                android:text="Estrella de mar"/>
+
+            <RadioButton
+                android:id="@+id/rb2b"
+                style="@style/RadioButtonStyle"
+                android:text="Rana"/>
+
+            <RadioButton
+                android:id="@+id/rb2c"
+                style="@style/RadioButtonStyle"
+                android:text="Araña"/>
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/checkPregunta2"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="end"
+            android:layout_marginBottom="16dp"
+            android:visibility="invisible"
+            android:contentDescription="Resultado pregunta 2"/>
+
+        <!-- Separador -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider_color"
+            android:layout_marginVertical="8dp"/>
+
+        <!-- Pregunta 3 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3. ¿Cuál no tiene columna vertebral?"
+            android:textColor="@color/primary_text"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:paddingVertical="8dp">
+
+            <RadioButton
+                android:id="@+id/rb3a"
+                style="@style/RadioButtonStyle"
+                android:text="Pez"/>
+
+            <RadioButton
+                android:id="@+id/rb3b"
+                style="@style/RadioButtonStyle"
+                android:text="Pulpo"/>
+
+            <RadioButton
+                android:id="@+id/rb3c"
+                style="@style/RadioButtonStyle"
+                android:text="Perro"/>
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/checkPregunta3"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="end"
+            android:layout_marginBottom="16dp"
+            android:visibility="invisible"
+            android:contentDescription="Resultado pregunta 3"/>
+
+        <!-- Separador -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider_color"
+            android:layout_marginVertical="8dp"/>
+
+        <!-- Pregunta 4 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4. ¿Qué animal es un vertebrado?"
+            android:textColor="@color/primary_text"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:paddingVertical="8dp">
+
+            <RadioButton
+                android:id="@+id/rb4a"
+                style="@style/RadioButtonStyle"
+                android:text="Hormiga"/>
+
+            <RadioButton
+                android:id="@+id/rb4b"
+                style="@style/RadioButtonStyle"
+                android:text="Araña"/>
+
+            <RadioButton
+                android:id="@+id/rb4c"
+                style="@style/RadioButtonStyle"
+                android:text="Pez"/>
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/checkPregunta4"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="end"
+            android:layout_marginBottom="16dp"
+            android:visibility="invisible"
+            android:contentDescription="Resultado pregunta 4"/>
+
+        <!-- Separador -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider_color"
+            android:layout_marginVertical="8dp"/>
+
+        <!-- Pregunta 5 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5. ¿Cuál es un invertebrado marino?"
+            android:textColor="@color/primary_text"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:paddingVertical="8dp">
+
+            <RadioButton
+                android:id="@+id/rb5a"
+                style="@style/RadioButtonStyle"
+                android:text="Estrella de mar"/>
+
+            <RadioButton
+                android:id="@+id/rb5b"
+                style="@style/RadioButtonStyle"
+                android:text="Perro"/>
+
+            <RadioButton
+                android:id="@+id/rb5c"
+                style="@style/RadioButtonStyle"
+                android:text="Rana"/>
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/checkPregunta5"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="end"
+            android:layout_marginBottom="16dp"
+            android:visibility="invisible"
+            android:contentDescription="Resultado pregunta 5"/>
+
+        <!-- Separador -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider_color"
+            android:layout_marginVertical="8dp"/>
+
+        <!-- Pregunta 6 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="6. ¿Cuál de estos tiene esqueleto interno?"
+            android:textColor="@color/primary_text"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:paddingVertical="8dp">
+
+            <RadioButton
+                android:id="@+id/rb6a"
+                style="@style/RadioButtonStyle"
+                android:text="Caracol"/>
+
+            <RadioButton
+                android:id="@+id/rb6b"
+                style="@style/RadioButtonStyle"
+                android:text="Pez"/>
+
+            <RadioButton
+                android:id="@+id/rb6c"
+                style="@style/RadioButtonStyle"
+                android:text="Pulga"/>
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/checkPregunta6"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="end"
+            android:layout_marginBottom="16dp"
+            android:visibility="invisible"
+            android:contentDescription="Resultado pregunta 6"/>
+
+        <!-- Botón Finalizar -->
+        <Button
+            android:id="@+id/btnFinalizar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Finalizar evaluación"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/primary_color"
+            android:textAllCaps="false"
+            android:elevation="4dp"
+            style="@style/Widget.AppCompat.Button.Colored"/>
+
+        <!-- Resultado -->
+        <TextView
+            android:id="@+id/resultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary_color"
+            android:padding="12dp"
+            android:background="@drawable/result_background"/>
+
+        <!-- Botón Volver -->
+        <Button
+            android:id="@+id/btnVolver"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Volver al inicio"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/secondary_color"
+            android:textAllCaps="false"
+            style="@style/Widget.AppCompat.Button.Colored"/>
+
+    </LinearLayout>
+</ScrollView>
