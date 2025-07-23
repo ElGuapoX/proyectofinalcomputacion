@@ -12,7 +12,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-// se arreglo la pelota
 import androidx.appcompat.app.AppCompatActivity;
 
 public class SensorMovimientoActivity extends AppCompatActivity implements SensorEventListener {
