@@ -16,10 +16,14 @@
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
     </activity>
-        <activity android:name=".MenuActivity" />
-        <activity android:name=".SensorMovimientoActivity" />
-        <activity android:name=".PareoActivity" />
-        <activity android:name=".PreguntasActivity" />
+        <activity android:name=".MenuActivity"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"/>
+        <activity android:name=".SensorMovimientoActivity"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"/>
+        <activity android:name=".PareoActivity"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"   />
+        <activity android:name=".PreguntasActivity"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"/>
     </application>
 
 </manifest>
