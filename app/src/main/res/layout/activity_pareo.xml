@@ -9,6 +9,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#D0F0C0"
         android:orientation="vertical"
         android:padding="24dp">
 
@@ -16,32 +17,32 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
             android:text="Clasifica los Animales"
             android:textColor="@color/primary_color"
             android:textSize="24sp"
-            android:textStyle="bold"
-            android:gravity="center"
-            android:layout_marginBottom="16dp"
-            android:fontFamily="sans-serif-condensed"/>
+            android:textStyle="bold" />
 
         <!-- Subtítulo -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Selecciona si cada animal es vertebrado o invertebrado"
-            android:textColor="@color/secondary_text"
-            android:textSize="16sp"
+            android:layout_marginBottom="24dp"
             android:gravity="center"
-            android:layout_marginBottom="24dp"/>
+            android:text="Selecciona si cada animal es vertebrado o invertebrado"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
 
         <!-- Bloque 1 -->
         <LinearLayout
-            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:paddingVertical="12dp"
             android:background="?attr/selectableItemBackground"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingVertical="12dp"
             android:paddingStart="8dp"
             android:paddingEnd="8dp">
 
@@ -49,42 +50,42 @@
                 android:id="@+id/image1"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:src="@drawable/pez"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/circle_background"
                 android:contentDescription="Pez"
                 android:scaleType="centerCrop"
-                android:layout_marginEnd="16dp"
-                android:background="@drawable/circle_background"/>
+                android:src="@drawable/pez" />
 
             <Spinner
                 android:id="@+id/spinner1"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                style="@style/Widget.AppCompat.Spinner.Underlined"/>
+                android:layout_weight="1" />
 
             <ImageView
                 android:id="@+id/check1"
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:layout_marginStart="16dp"
-                android:visibility="invisible"/>
+                android:visibility="invisible" />
         </LinearLayout>
 
         <!-- Separador -->
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@color/divider_color"
-            android:layout_marginVertical="8dp"/>
+            android:layout_marginVertical="8dp"
+            android:background="@color/divider_color" />
 
         <!-- Bloque 2 -->
         <LinearLayout
-            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:paddingVertical="12dp"
             android:background="?attr/selectableItemBackground"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingVertical="12dp"
             android:paddingStart="8dp"
             android:paddingEnd="8dp">
 
@@ -92,42 +93,42 @@
                 android:id="@+id/image2"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:src="@drawable/caracol"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/circle_background"
                 android:contentDescription="Caracol"
                 android:scaleType="centerCrop"
-                android:layout_marginEnd="16dp"
-                android:background="@drawable/circle_background"/>
+                android:src="@drawable/caracol" />
 
             <Spinner
                 android:id="@+id/spinner2"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                style="@style/Widget.AppCompat.Spinner.Underlined"/>
+                android:layout_weight="1" />
 
             <ImageView
                 android:id="@+id/check2"
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:layout_marginStart="16dp"
-                android:visibility="invisible"/>
+                android:visibility="invisible" />
         </LinearLayout>
 
         <!-- Separador -->
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@color/divider_color"
-            android:layout_marginVertical="8dp"/>
+            android:layout_marginVertical="8dp"
+            android:background="@color/divider_color" />
 
         <!-- Bloque 3 -->
         <LinearLayout
-            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:paddingVertical="12dp"
             android:background="?attr/selectableItemBackground"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingVertical="12dp"
             android:paddingStart="8dp"
             android:paddingEnd="8dp">
 
@@ -135,42 +136,42 @@
                 android:id="@+id/image3"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:src="@drawable/rana"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/circle_background"
                 android:contentDescription="Rana"
                 android:scaleType="centerCrop"
-                android:layout_marginEnd="16dp"
-                android:background="@drawable/circle_background"/>
+                android:src="@drawable/rana" />
 
             <Spinner
                 android:id="@+id/spinner3"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                style="@style/Widget.AppCompat.Spinner.Underlined"/>
+                android:layout_weight="1" />
 
             <ImageView
                 android:id="@+id/check3"
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:layout_marginStart="16dp"
-                android:visibility="invisible"/>
+                android:visibility="invisible" />
         </LinearLayout>
 
         <!-- Separador -->
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@color/divider_color"
-            android:layout_marginVertical="8dp"/>
+            android:layout_marginVertical="8dp"
+            android:background="@color/divider_color" />
 
         <!-- Bloque 4 -->
         <LinearLayout
-            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:paddingVertical="12dp"
             android:background="?attr/selectableItemBackground"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingVertical="12dp"
             android:paddingStart="8dp"
             android:paddingEnd="8dp">
 
@@ -178,42 +179,42 @@
                 android:id="@+id/image4"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:src="@drawable/spider"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/circle_background"
                 android:contentDescription="Araña"
                 android:scaleType="centerCrop"
-                android:layout_marginEnd="16dp"
-                android:background="@drawable/circle_background"/>
+                android:src="@drawable/spider" />
 
             <Spinner
                 android:id="@+id/spinner4"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                style="@style/Widget.AppCompat.Spinner.Underlined"/>
+                android:layout_weight="1" />
 
             <ImageView
                 android:id="@+id/check4"
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:layout_marginStart="16dp"
-                android:visibility="invisible"/>
+                android:visibility="invisible" />
         </LinearLayout>
 
         <!-- Separador -->
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@color/divider_color"
-            android:layout_marginVertical="8dp"/>
+            android:layout_marginVertical="8dp"
+            android:background="@color/divider_color" />
 
         <!-- Bloque 5 -->
         <LinearLayout
-            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:paddingVertical="12dp"
             android:background="?attr/selectableItemBackground"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingVertical="12dp"
             android:paddingStart="8dp"
             android:paddingEnd="8dp">
 
@@ -221,42 +222,42 @@
                 android:id="@+id/image5"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:src="@drawable/perro"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/circle_background"
                 android:contentDescription="Perro"
                 android:scaleType="centerCrop"
-                android:layout_marginEnd="16dp"
-                android:background="@drawable/circle_background"/>
+                android:src="@drawable/perro" />
 
             <Spinner
                 android:id="@+id/spinner5"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                style="@style/Widget.AppCompat.Spinner.Underlined"/>
+                android:layout_weight="1" />
 
             <ImageView
                 android:id="@+id/check5"
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:layout_marginStart="16dp"
-                android:visibility="invisible"/>
+                android:visibility="invisible" />
         </LinearLayout>
 
         <!-- Separador -->
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@color/divider_color"
-            android:layout_marginVertical="8dp"/>
+            android:layout_marginVertical="8dp"
+            android:background="@color/divider_color" />
 
         <!-- Bloque 6 -->
         <LinearLayout
-            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:paddingVertical="12dp"
             android:background="?attr/selectableItemBackground"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingVertical="12dp"
             android:paddingStart="8dp"
             android:paddingEnd="8dp">
 
@@ -264,40 +265,41 @@
                 android:id="@+id/image6"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:src="@drawable/estrella_mar"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/circle_background"
                 android:contentDescription="Estrella de mar"
                 android:scaleType="centerCrop"
-                android:layout_marginEnd="16dp"
-                android:background="@drawable/circle_background"/>
+                android:src="@drawable/estrella_mar" />
 
             <Spinner
                 android:id="@+id/spinner6"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                style="@style/Widget.AppCompat.Spinner.Underlined"/>
+                android:layout_weight="1" />
 
             <ImageView
                 android:id="@+id/check6"
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:layout_marginStart="16dp"
-                android:visibility="invisible"/>
+                android:visibility="invisible" />
         </LinearLayout>
 
         <!-- Botón para ir a preguntas -->
         <Button
             android:id="@+id/btnSiguiente"
+            style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="match_parent"
             android:layout_height="48dp"
-            android:text="Continuar"
-            android:textColor="@android:color/white"
             android:layout_marginTop="32dp"
+            android:background="@drawable/rounded_button"
             android:backgroundTint="@color/primary_color"
-            android:textAllCaps="false"
             android:elevation="4dp"
             android:stateListAnimator="@null"
-            style="@style/Widget.AppCompat.Button.Colored"/>
+            android:text="Continuar"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white" />
 
     </LinearLayout>
 </ScrollView>

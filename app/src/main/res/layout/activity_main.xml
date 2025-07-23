@@ -1,39 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mainLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/white"
     android:padding="16dp"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textViewTitle"
+    <LinearLayout
+        android:id="@+id/contenedorCentral"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Autenticación con Huella Digital"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="40dp"/>
-
-    <Button
-        android:id="@+id/buttonAuthenticate" android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Autenticar con Biometría"
         android:layout_centerInParent="true"
-        android:padding="15dp"
-        android:textSize="18sp"/>
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true">
 
-    <TextView
-        android:id="@+id/textViewStatus"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/buttonAuthenticate"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:textSize="18sp"
-        android:text="Estado: Esperando..."
-        android:textStyle="italic"/>
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¡Bienvenido!"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="32dp" />
+
+        <Button
+            android:id="@+id/buttonAuthenticate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="#74E778"
+            android:elevation="4dp"
+            android:padding="16dp"
+            android:text="Autenticar con Biometría"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="202dp"
+            android:layout_height="194dp"
+            android:layout_marginTop="32dp"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/tortuga"
+            android:contentDescription="Tortuga decorativa" />
+    </LinearLayout>
 
 </RelativeLayout>

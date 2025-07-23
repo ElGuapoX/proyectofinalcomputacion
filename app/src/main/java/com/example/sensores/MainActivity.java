@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         buttonAuthenticate = findViewById(R.id.buttonAuthenticate);
-        textViewStatus = findViewById(R.id.textViewStatus);
+
         mainLayout = findViewById(R.id.mainLayout);
 
         executor = ContextCompat.getMainExecutor(this);
